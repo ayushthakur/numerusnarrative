@@ -1,0 +1,96 @@
+Let’s talk about what can you do when you deal with a dataset  (even if it is your first time)
+
+  
+
+In a dataset, you have rows and columns.
+
+![](https://keydifferences.com/wp-content/uploads/2016/09/rows-vs-column.jpg)
+
+  
+
+Each column represents same type of a measurable quantity  (can be a number or non-number).
+
+Each row represents an observation or an entity you can uniquely identify  (like - a person, a transaction, a website session, a subject, a trip etc.)
+
+  
+
+First step is to identify what are numbers and what are non-numbers.
+This is useful as you can do some basic mathematics on numbers.
+
+  
+
+Let’s take a dataset which represents countries and some of their measures
+![](https://paper-attachments.dropbox.com/s_A1AD3890A8E53C987698C7932A35504A76097BC436EE6C4E76D1277670817873_1611317241159_asia_data.png)
+
+  
+We  (as in humans) don’t have the capacity to interpret more than 5 numbers at the same time. So we try to minimize this data by converting it into single numbers that we can understand. 
+There are two ways to summarize:
+
+1.  Which helps you guess the typical value of from the data . We call it **_central tendency._**
+A measure of central value that represents the data
+
+3.  Which helps you guess how wide or how spread the data is. We call it **_spread._**
+A measure of how much the values in the data vary
+
+  
+
+Let’s talk about **_central tendency_** now.
+
+1.  **_Average or Mean_** - The first thing to do is to take an average  (that’s what they did with your marks back in school, right?). It is also called mean  (no pun intended).
+
+We measure it by adding all values and dividing by total number of values.
+
+![](https://cdn.corporatefinanceinstitute.com/assets/arithmetic-mean1-1024x159.png)
+
+**_For eg:_** Let’s say from our dataset we take the average GDP per capita in Asia.
+![](https://paper-attachments.dropbox.com/s_A1AD3890A8E53C987698C7932A35504A76097BC436EE6C4E76D1277670817873_1611237090398_asia_data.png)
+
+-   Mean GDP per capita  (Asia) 
+=  ($27414.1 + $1511.2 + $1446.9 + $682.4 + $22889.3 + $8724.3)/6 = $10,444
+
+But we can clearly see that this is not a good representation of the typical GDP per capita of a country in Asia. Why?
+
+It is because mean is impacted by outliers i.e. unusually high or low values. In our case it is Brunei and Bahrain.
+
+Let’s look at a more relatable example:
+
+-   If there are 6 team people in your team where 5 of them earn $20k and the manager  (6th one) earns $100k. The mean salary of the team will be $200/6 = $33.3k
+Which we can see is not representative of what typically a person earns in the team.
+
+  
+
+2.  **_Median_** - To handle this issue, we have median, which is the measure of what the middle value of the numbers  (when arranged in an ascending order) represents. So this value represents that 50% of values in the data will be less than median and 50% will be more than it. It literally is the **_middle value._**
+
+How to calculate?
+
+- If the number of data points is odd then =  (n+1)/2
+Eg: If you have 7 data points the 4th one  (when arranged in ascending order) will be the median
+
+- If the number of data points is even then you take an average of n/2 and  (n/2)+1 value
+Eg: If you have 6 data points then you take 3rd and 4th values and take their average
+
+In our example of GDP per capita for Asia.
+![](https://paper-attachments.dropbox.com/s_A1AD3890A8E53C987698C7932A35504A76097BC436EE6C4E76D1277670817873_1611316527297_asia_data_median.png)
+
+-   Median GDP per capita (Asia) =  ($1511.2+$8724.3)/2 = $5117.7
+This value looks more sensible.
+
+-   The thumb rule here is in case of presence of outliers it is better to rely on median than mean.
+
+-   It is always good to keep both these numbers handy. This will help you understand the shape of the distribution  (more on it in another post)
+
+  
+
+3.  **_Mode_** _-_ Another way to summarize the data is to talk about what is the most common i.e. the value that has occurred most often. This is not very useful to summarize a numerical value. But certain kind of numerical values that represent order  (1st, 2nd etc.) can be summarized using this. This measure is used mostly to summarize categorical data.
+
+  
+
+Can you think of places where mode is more useful to you in daily applications?
+
+If you are optimizing the dishes to be sold on an online food restaurant. You would want to see the most popular dishes  (isn’t that mode!)
+
+We will talk about spread in the part 2 of this post
+
+
+Author: Ayush Thakur
+Reviewers: Kalyani Oak, Naveen Kumar KB
